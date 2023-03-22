@@ -1,14 +1,20 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
+//import { Projects } from "../components/Projects";
 import Bianca from "../images/Bianca.jpeg";
 
 import "../style/homepage.css";
 
 export const Homepage = () => {
   const [display, setDisplay] = useState("hidden");
+  const [displayArgs, setDisplayArgs] = useState("hidden")
+  //const [isActive, setIsActive] = useState(false);
+  const navigate = useNavigate();
+
 
   return (
-    <div className="main-container max-w-lg rounded-lg">
+    <div className="main-container max-w-xl rounded-lg m-0">
       <div className="flex flex-col items-center py-10">
         <h1 className="mb-6 text-6xl text-gray-900 dark:text-white">
           Bianca Francini
@@ -17,33 +23,52 @@ export const Homepage = () => {
           Junior Full stack Developer
         </h3>
       </div>
-
       <motion.div
         className="box"
-        whileHover={{ scale: 1.2 }}
-        onClick={() =>
+        onClick={() => {
           setDisplay(
-            "text-5xl text-blue-500 bg-white p-8 border border-2 border-zinc-500 rounded-full"
-          )
-        }
+            "display-talk text-xl text-blue-600 bg-white p-8 border border-2 border-zinc-500 rounded-3xl"
+          );
+          //setIsActive(true);
+        }}
         //transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
-        <div className="flex place-items-center space-x-24">
+        <div className="info-container flex justify-between max-w-xl grow-0">
+        <div className={displayArgs}>
+            <Outlet />
+          </div>
           <img
             src={Bianca}
             className="Bianca-pic border rounded-full mb-24"
             alt="Bianca pic profile"
           />
           <motion.div
-            initial={{ x: -500}}
-            animate={{ x: 100}}
+            initial={{ x: -500 }}
+            animate={{ x: 70 }}
             transition={{
               ease: "ease-in-out",
               duration: 2,
-              x: { duration: 3 },
+              x: { duration: 2 },
             }}
           >
-            <div className={display}>Hello!!</div>
+            <div className={display}>
+              Hi there!
+              <br />
+              My name is Bianca. Nice to meet you 🙃
+              <div className="mt-8 font-bold">
+                <p onClick={() => {
+                  navigate('/projects');
+                  setDisplayArgs("display-args grow");}}>Projects</p>
+                <br />
+                <p onClick={() => {
+                  navigate('/education');
+                  setDisplayArgs("display-args grow");}}>Education</p>
+                <br />
+                <p onClick={() => {
+                  navigate('/experience');
+                  setDisplayArgs("display-args grow");}}>Experience</p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </motion.div>

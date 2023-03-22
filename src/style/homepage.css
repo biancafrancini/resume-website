@@ -2,8 +2,21 @@
     border: none;
 }
 
+.Bianca-pic:hover{
+    padding: 12px;
+    border: 5px solid green;
+}
+
 .box {
     cursor: pointer;
   }
 
+.display-talk{
+    min-width: 450px;
+    min-height: 250px;
+  }
+
+.display-args{
+    display: flex;
+}
 
