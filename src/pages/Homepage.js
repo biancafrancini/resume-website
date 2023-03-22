@@ -33,10 +33,10 @@ export const Homepage = () => {
         }}
         //transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
-        <div className="info-container flex justify-between max-w-xl grow-0">
         <div className={displayArgs}>
             <Outlet />
-          </div>
+        </div>
+        <div className="info-container flex max-w-xl">
           <img
             src={Bianca}
             className="Bianca-pic border rounded-full mb-24"

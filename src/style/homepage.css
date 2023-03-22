@@ -17,6 +17,7 @@
   }
 
 .display-args{
-    display: flex;
+    display: block;
+    position: absolute;
 }
 
