@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-import "../style/projects.css";
 
-export const Projects = () => {
+import "../style/techskills.css";
+
+export const TechSkills = () => {
+  
   return (
     <div>
       <motion.div
@@ -13,7 +15,7 @@ export const Projects = () => {
           x: { duration: 2 },
         }}
       >
-        <div className="picture-side-container">PROJECTS</div>
+        <div className="picture-side-container">My Skills</div>
       </motion.div>
     </div>
   );

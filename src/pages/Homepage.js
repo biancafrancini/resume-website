@@ -57,8 +57,8 @@ export const Homepage = () => {
               My name is Bianca. Nice to meet you 🙃
               <div className="mt-8 font-bold">
                 <p onClick={() => {
-                  navigate('/projects');
-                  setDisplayArgs("display-args grow");}}>Projects</p>
+                  navigate('/techskills');
+                  setDisplayArgs("display-args grow");}}>Skills</p>
                 <br />
                 <p onClick={() => {
                   navigate('/education');
