@@ -27,7 +27,7 @@ export const Homepage = () => {
         <h1 className="mb-6 text-6xl text-gray-900 dark:text-white">
           Bianca Francini
         </h1>
-        <h3 className="mb-24 text-gray-500 text-2xl dark:text-gray-400">
+        <h3 className="mb-24 text-gray-500 text-3xl dark:text-gray-400">
           Front-end Developer
         </h3>
       </div>

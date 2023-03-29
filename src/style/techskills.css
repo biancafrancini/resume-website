@@ -1,3 +1,34 @@
-.box-projects{
-    width: 300px;
+/*.picture-side-container > span{
+    text-align: right;
+    padding: 0;
+    max-width: 400px;
+}*/
+.icon-skills {
+  font-size: 45px;
+  text-align: center;
+}
+
+.html-icon > .fa-brands {
+  color: #e65100;
+}
+
+.css-icon > .fa-brands {
+  color: #0277bd;
+}
+
+.sass-icon > .fa-brands {
+  color: #f06292;
+}
+
+.bootstrap-icon {
+  color: #673ab7;
+}
+
+.tailwind-icon > img,
+.motion-icon > img {
+  margin-left: 55px;
+}
+
+.motion-icon > img{
+    border-radius: 5px;
 }
