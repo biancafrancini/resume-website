@@ -7,17 +7,17 @@ import Bianca from "../images/Bianca.jpeg";
 import "../style/homepage.css";
 
 export const Homepage = () => {
-  const [displayArgs, setDisplayArgs] = useState("hidden");
   const [isActive, setIsActive] = useState(false);
+  const [display, setDisplay] = useState(false)
   const navigate = useNavigate();
-
-  const [isEducationActive, setIsEducationActive] = useState(false);
 
   const showOnClick = () => {
     if (!isActive) {
       setIsActive(true);
+      setDisplay(false);
     } else {
       setIsActive(false);
+      setDisplay(false);
     }
   };
 
@@ -34,13 +34,10 @@ export const Homepage = () => {
 
       <div className="grid grid-cols-3">
         {/* Left block */}
-        <div className="">
-          {isEducationActive &&
-            <div className="display-args">
-              asdfasdfasdga
-              {/* <Outlet /> */}
-            </div>
-          }
+        <div>
+        {display && <div className="">
+          <Outlet />
+        </div>}
         </div>
 
         {/* Icon */}
@@ -49,11 +46,11 @@ export const Homepage = () => {
           onClick={showOnClick}
           // transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-            <img
-              src={Bianca}
-              className="Bianca-pic border rounded-full mb-24"
-              alt="Bianca pic profile"
-            />
+          <img
+            src={Bianca}
+            className="Bianca-pic border rounded-full mb-24"
+            alt="Bianca pic profile"
+          />
         </div>
 
         {/* Right block */}
@@ -75,7 +72,7 @@ export const Homepage = () => {
                 <p
                   onClick={() => {
                     navigate("/techskills");
-                    setDisplayArgs("display-args grow");
+                    setDisplay(true);
                   }}
                 >
                   Skills
@@ -83,9 +80,8 @@ export const Homepage = () => {
                 <br />
                 <p
                   onClick={() => {
-                    // navigate("/education");
-                    // setDisplayArgs("display-args grow");
-                    setIsEducationActive(true);
+                    navigate("/education");
+                    setDisplay(true);
                   }}
                 >
                   Education
@@ -94,7 +90,7 @@ export const Homepage = () => {
                 <p
                   onClick={() => {
                     navigate("/experience");
-                    setDisplayArgs("display-args grow");
+                    setDisplay(true);
                   }}
                 >
                   Experience

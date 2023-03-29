@@ -4,8 +4,8 @@ export const Experience = () => {
   return (
     <div>
       <motion.div
-        initial={{ x: 70 }}
-        animate={{ x: -100 }}
+        initial={{ x: 0 }}
+        animate={{ x: -350 }}
         transition={{
           ease: "ease-in-out",
           duration: 2,

@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 
-
 export const Education = () => {
-    return(
-        <div>
-            <motion.div
+  return (
+    <div>
+      <motion.div
         initial={{ x: 70 }}
         animate={{ x: -100 }}
         transition={{
@@ -15,6 +14,6 @@ export const Education = () => {
       >
         <div className="picture-side-container">Education</div>
       </motion.div>
-        </div>
-    )
-}
+    </div>
+  );
+};
