@@ -28,6 +28,9 @@ export const TechSkills = () => {
             </p>
           </div>
           <div className="motion-icon mt-12"><img src={FramerIcon} width="30" alt="framer motion icon" /><p className="text-white text-xs py-4">Framer motion</p></div>
+          <div className="js-icon mt-6"><i class="fa-brands fa-js"></i><p className="text-white text-xs py-2">JS</p></div>
+          <div className="node-icon mt-6"><i class="fa-brands fa-node-js"></i><p className="text-white text-xs py-2">Node.js</p></div>
+          <div className="sass-icon mt-6"><i class="fa-brands fa-sass"></i><p className="text-white text-xs py-2">SASS</p></div>
         </div>
       </motion.div>
     </div>

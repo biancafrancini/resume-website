@@ -32,3 +32,13 @@
 .motion-icon > img{
     border-radius: 5px;
 }
+
+.js-icon > .fa-brands {
+  color: #f0e138;
+}
+
+.node-icon > .fa-brands {
+  color: #37d23a
+}
+
+
