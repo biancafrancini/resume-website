@@ -1,0 +1,22 @@
+.picture-side-container{
+    max-width: fit-content;
+}
+
+.indicator-item > .fa-graduation-cap{
+    color: #ff5778;
+}
+
+.indicator-item > .fa-scroll{
+    color: #258b09;
+}
+
+.content-text{
+    width: fit-content;
+    color: blue;
+}
+
+
+.content-text > h4{
+    color: rgb(84, 84, 255);
+}
+
