@@ -67,6 +67,7 @@ export const Homepage = () => {
             <div className=" display-talk text-xl text-blue-600 bg-white p-8 border border-2 border-zinc-500 rounded-3xl">
               Hi there!
               <br />
+              <br />
               My name is Bianca. Nice to meet you 🙃
               <div className="mt-8 font-bold">
                 <p

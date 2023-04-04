@@ -1,11 +1,8 @@
-/*.picture-side-container > span{
-    text-align: right;
-    padding: 0;
-    max-width: 400px;
-}*/
 .icon-skills {
   font-size: 45px;
   text-align: center;
+  margin-top: -80px;
+  gap: 0;
 }
 
 .html-icon > .fa-brands {
@@ -25,20 +22,36 @@
 }
 
 .tailwind-icon > img,
-.motion-icon > img {
+.typescript-icon > img,
+.git-icon > img,
+.nest-icon > img {
   margin-left: 55px;
 }
 
-.motion-icon > img{
-    border-radius: 5px;
+.motion-icon > img {
+  border-radius: 5px;
 }
 
 .js-icon > .fa-brands {
   color: #f0e138;
 }
 
-.node-icon > .fa-brands {
-  color: #37d23a
+.typescript-icon {
+  margin-top: 28px;
 }
 
+.typescript-icon > p {
+  padding: 20px 0;
+}
 
+.react-icon > .fa-brands {
+  color: #39c1d7;
+}
+
+.git-icon > p {
+  padding: 21px 0;
+}
+
+.node-icon > .fa-brands {
+  color: #37d23a;
+}
