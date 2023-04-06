@@ -12,6 +12,10 @@ body{
     justify-content: center;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .picture-side-container{
     color: white;
 }

@@ -8,7 +8,7 @@ import "../style/homepage.css";
 
 export const Homepage = () => {
   const [isActive, setIsActive] = useState(false);
-  const [display, setDisplay] = useState(false)
+  const [display, setDisplay] = useState(false);
   const navigate = useNavigate();
 
   const showOnClick = () => {
@@ -23,7 +23,9 @@ export const Homepage = () => {
 
   return (
     <div className="main-container max-w-full rounded-lg m-0 justify-center">
-      <div className="flex flex-col items-center py-10">
+
+      <div className="grid grid-cols-3">
+      <div className="flex flex-col justify-center py-10">
         <h1 className="mb-6 text-6xl text-gray-900 dark:text-white">
           Bianca Francini
         </h1>
@@ -31,15 +33,6 @@ export const Homepage = () => {
           Front-end Developer
         </h3>
       </div>
-
-      <div className="grid grid-cols-3">
-        {/* Left block */}
-        <div>
-        {display && <div className="">
-          <Outlet />
-        </div>}
-        </div>
-
         {/* Icon */}
         <div
           className="box info-container max-w-xl"
@@ -48,7 +41,7 @@ export const Homepage = () => {
         >
           <img
             src={Bianca}
-            className="Bianca-pic border rounded-full mb-24"
+            className="Bianca-pic border rounded-full mb-10"
             alt="Bianca pic profile"
           />
         </div>
@@ -101,6 +94,14 @@ export const Homepage = () => {
           </motion.div>
         )}
       </div>
+       {/* Left block */}
+       <div>
+          {display && (
+            <div className="">
+              <Outlet />
+            </div>
+          )}
+        </div>
     </div>
   );
 };

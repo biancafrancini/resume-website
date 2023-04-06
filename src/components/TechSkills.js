@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { FaBootstrap } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
@@ -17,7 +16,7 @@ import "../style/techskills.css";
 export const TechSkills = () => {
   return (
     <div>
-      <motion.div
+      {/*<motion.div
         initial={{ x: 80 }}
         animate={{ x: -80 }}
         transition={{
@@ -25,7 +24,7 @@ export const TechSkills = () => {
           duration: 2,
           x: { duration: 2 },
         }}
-      >
+      >*/}
         <div className="picture-side-container grid grid-cols-3 icon-skills">
           <div className="html-icon flex flex-col items-center">
             <SiHtml5 className="brand" />
@@ -79,7 +78,6 @@ export const TechSkills = () => {
             <p className="font-bold text-sm py-2">Nest.js</p>
           </div>
         </div>
-      </motion.div>
     </div>
   );
 };
