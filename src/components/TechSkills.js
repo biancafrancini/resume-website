@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
-import tailwindIcon from "../images/tailwind-icon.png";
-import FramerIcon from "../images/motion-icon.png";
-import typescriptIcon from "../images/typescript-icon.png";
-import gitIcon from "../images/git-icon.png";
-import nestIcon from "../images/nest-icon.png";
+import { FaBootstrap } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { SiHtml5 } from "react-icons/si";
+import { SiCss3 } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { SiFramer } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiReact } from "react-icons/si";
+import { SiNestjs } from "react-icons/si";
+import { BsGit } from "react-icons/bs";
 
 import "../style/techskills.css";
 
@@ -19,77 +26,57 @@ export const TechSkills = () => {
           x: { duration: 2 },
         }}
       >
-        <div className="picture-side-container grid grid-cols-3 ml-24 icon-skills">
-          <div className="html-icon mt-24">
-            <i class="fa-brands fa-html5"></i>
-            <p className="text-white text-xs py-2">HTML5</p>
+        <div className="picture-side-container grid grid-cols-3 icon-skills">
+          <div className="html-icon flex flex-col items-center">
+            <SiHtml5 className="brand" />
+            <p className="font-bold text-sm py-2">HTML5</p>
           </div>
-          <div className="css-icon mt-24">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p className="text-white text-xs py-2">CSS</p>
+          <div className="css-icon flex flex-col items-center">
+            <SiCss3 className="brand"/>
+            <p className="font-bold text-sm py-2">CSS</p>
           </div>
-          <div className="sass-icon mt-24">
-            <i class="fa-brands fa-sass"></i>
-            <p className="text-white text-xs py-2">SASS</p>
-          </div>
-
-          <div className="bootstrap-icon mt-6">
-            <i class="fa-brands fa-bootstrap"></i>
-            <p className="text-white text-xs py-2">Bootstrap</p>
-          </div>
-          <div className="tailwind-icon mt-12">
-            <img src={tailwindIcon} width="50" alt="tailwind icon" />
-            <p className="text-white text-xs py-6">Tailwind css</p>
-          </div>
-          <div className="motion-icon mt-12">
-            <img
-              src={FramerIcon}
-              className="ml-16"
-              width="30"
-              alt="framer motion icon"
-            />
-            <p className="text-white text-xs py-4">Framer motion</p>
+          <div className="sass-icon flex flex-col items-center">
+            <FaSass className="brand" />
+            <p className="font-bold text-sm py-2">SASS</p>
           </div>
 
-          <div className="js-icon mt-6">
-            <i class="fa-brands fa-js"></i>
-            <p className="text-white text-xs py-2">Javascript</p>
+          <div className="bootstrap-icon flex flex-col items-center">
+            <FaBootstrap className="brand" />
+            <p className="font-bold text-sm py-2">Bootstrap</p>
           </div>
-          <div className="typescript-icon">
-            <img
-              src={typescriptIcon}
-              className="rounded-md mt-2"
-              width="43"
-              alt="typescript icon"
-            />
-            <p className="text-white text-xs">Typescript</p>
+          <div className="tailwind-icon flex flex-col items-center">
+            <SiTailwindcss className="brand" />
+            <p className="font-bold text-sm py-2">Tailwind css</p>
           </div>
-          <div className="react-icon mt-6">
-            <i class="fa-brands fa-react"></i>
-            <p className="text-white text-xs py-2">React.js</p>
+          <div className="motion-icon flex flex-col items-center">
+            <SiFramer className="brand" />
+            <p className="font-bold text-sm py-2">Framer motion</p>
           </div>
 
-          <div className="git-icon mt-6">
-            <img
-              src={gitIcon}
-              className="rounded-md mt-6"
-              width="70"
-              alt="git icon"
-            />
-            <p className="text-white text-xs">Git</p>
+          <div className="js-icon flex flex-col items-center">
+            <SiJavascript className="brand"/>
+            <p className="font-bold text-sm py-2">Javascript</p>
           </div>
-          <div className="node-icon mt-6">
-            <i class="fa-brands fa-node-js"></i>
-            <p className="text-white text-xs py-2">Node.js</p>
+          <div className="typescript-icon flex flex-col items-center">
+            <SiTypescript className="brand"/>
+            <p className="font-bold text-sm py-2">Typescript</p>
           </div>
-          <div className="nest-icon mt-6">
-            <img
-              src={nestIcon}
-              className="rounded-md mt-4"
-              width="45"
-              alt="nestJS icon"
-            />
-            <p className="text-white text-xs pt-4 pb-2">Nest.js</p>
+          <div className="react-icon flex flex-col items-center">
+            <SiReact className="brand"/>
+            <p className="font-bold text-sm py-2">React.js</p>
+          </div>
+
+          <div className="git-icon flex flex-col items-center">
+            <BsGit className="brand" />
+            <p className="font-bold text-sm py-2">Git</p>
+          </div>
+          <div className="node-icon flex flex-col items-center">
+            <FaNodeJs className="brand" />
+            <p className="font-bold text-sm py-2">Node.js</p>
+          </div>
+          <div className="nest-icon flex flex-col items-center">
+            <SiNestjs className="brand"/>
+            <p className="font-bold text-sm py-2">Nest.js</p>
           </div>
         </div>
       </motion.div>

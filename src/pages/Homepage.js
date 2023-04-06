@@ -64,11 +64,11 @@ export const Homepage = () => {
               x: { duration: 1 },
             }}
           >
-            <div className=" display-talk text-xl text-blue-600 bg-white p-8 border border-2 border-zinc-500 rounded-3xl">
+            <div className="display-talk text-2xl text-blue-600 bg-white p-8 border border-4 border-green-500 rounded-3xl mt-24">
               Hi there!
               <br />
               <br />
-              My name is Bianca. Nice to meet you 🙃
+              I'm Bianca. Nice to meet you 🙃
               <div className="mt-8 font-bold">
                 <p
                   onClick={() => {
