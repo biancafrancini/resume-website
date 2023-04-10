@@ -71,7 +71,7 @@ export const Experience = () => {
   ];
 
   return (
-    <div className="job-list-container max-w-full mt-24 p-12 flex flex-col items-center border border-2 border-white" id="experience">
+    <div className="job-list-container max-w-full py-24 flex flex-col items-center bg-white" id="experience">
       {/*<motion.div
         initial={{ x: 70 }}
         animate={{ x: -100 }}
@@ -82,28 +82,30 @@ export const Experience = () => {
         }}
       > </motion.div>*/}
       
-      <h2 className="font-bold text-5xl text-white pb-24"> Work experience 👷🏼‍♀️</h2>
+      <h2 className="font-bold text-5xl text-black pb-24"> Work experience 👷🏼‍♀️</h2>
 
-      <ol className="job-list relative border-l border-gray-200 dark:border-gray-700 justify-center w-1/2">
+      <ol className="job-list relative border-gray-200 dark:border-gray-700 justify-center w-1/2">
         {jobs &&
           jobs.map((job, index) => (
-            <li key={index} className="mb-10 ml-6">
-              <span className="absolute flex items-center justify-center w-6 h-6 bg-white rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-900">
+            <li key={index} className="mb-10 ml-12">
+              <div className="flex items-center">
+              <span className="absolute flex items-center text-2xl justify-center w-8 h-8 bg-white rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-900">
               {job.img}
               </span>
-              <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+              <h3 className="flex items-center mb-1 text-2xl text-white font-semibold p-2 rounded-md bg-black w-full">
                 {job.role}
-                <span className="text-md font-light pl-2">
+                <span className="text-2xl font-thin pl-2">
                   {job.company ? `at ${job.company}` : ""}
                 </span>
               </h3>
-              <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              </div>
+              <time className="block mb-2 text-md font-normal pl-2 leading-none text-gray-400 text-gray-500">
                 {job.date}
               </time>
-              <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="mb-4 text-base font-normal pl-2 text-gray-500 dark:text-gray-400 whitespace-normal">
                 {job.responsability}
               </p>
-              <span className="text-md font-semibold flex"><FaMapMarkedAlt /><span className="text-sm font-light pl-2"> {job.city}</span></span>
+              <span className="text-md font-semibold flex pl-2"><FaMapMarkedAlt /><span className="text-sm font-light pl-2"> {job.city}</span></span>
             </li>
           ))}
       </ol>

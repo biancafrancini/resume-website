@@ -4,9 +4,11 @@
 
 body{
     min-height: 100vh;
+    min-width: 100vw;
     margin: 0;
+    position: absolute;
     background-color: rgb(6, 6, 80);
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
 }

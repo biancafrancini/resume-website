@@ -1,6 +1,3 @@
-.picture-side-container{
-    max-width: fit-content;
-}
 
 .indicator-item > .fa-graduation-cap{
     color: #ff5778;
@@ -12,9 +9,9 @@
 
 .content-text{
     width: fit-content;
+    text-align: center;
     color: blue;
 }
-
 
 .content-text > h4{
     color: rgb(84, 84, 255);
