@@ -15,7 +15,7 @@ import "../style/techskills.css";
 
 export const TechSkills = () => {
   return (
-    <div className="techskills-section-container flex flex-col items-center border border-2 border-white">
+    <div className="techskills-section-container flex flex-col items-center border border-2 border-white" id="skills">
       {/*<motion.div
         initial={{ x: 80 }}
         animate={{ x: -80 }}

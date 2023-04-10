@@ -71,7 +71,7 @@ export const Experience = () => {
   ];
 
   return (
-    <div className="job-list-container max-w-full mt-24 p-12 flex flex-col items-center border border-2 border-white">
+    <div className="job-list-container max-w-full mt-24 p-12 flex flex-col items-center border border-2 border-white" id="experience">
       {/*<motion.div
         initial={{ x: 70 }}
         animate={{ x: -100 }}

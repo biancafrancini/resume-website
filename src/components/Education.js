@@ -12,7 +12,7 @@ export const Education = () => {
   ];
 
   return (
-    <div className="picture-side-container flex flex-col m-auto items-center mt-24 p-10 min-w-full border border-2 border-white mb-24">
+    <div className="picture-side-container flex flex-col m-auto items-center mt-24 p-10 min-w-full border border-2 border-white mb-24"  id="education">
       {/*<motion.div
         initial={{ x: 70 }}
         animate={{ x: -100 }}
