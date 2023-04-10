@@ -15,7 +15,7 @@ import "../style/techskills.css";
 
 export const TechSkills = () => {
   return (
-    <div>
+    <div className="techskills-section-container flex flex-col items-center border border-2 border-white">
       {/*<motion.div
         initial={{ x: 80 }}
         animate={{ x: -80 }}
@@ -25,7 +25,10 @@ export const TechSkills = () => {
           x: { duration: 2 },
         }}
       >*/}
-        <div className="picture-side-container grid grid-cols-3 icon-skills">
+
+      <h2 className="font-bold text-5xl text-white py-12"> My skills 👩🏼‍💻</h2>
+
+        <div className="picture-side-container min-w-full flex justify-center icon-skills">
           <div className="html-icon flex flex-col items-center">
             <SiHtml5 className="brand" />
             <p className="font-bold text-sm py-2">HTML5</p>

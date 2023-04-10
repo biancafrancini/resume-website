@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Outlet, useNavigate } from "react-router-dom";
-//import { Projects } from "../components/Projects";
+import { useNavigate } from "react-router-dom";
+import { Education } from "../components/Education";
+import { TechSkills } from "../components/TechSkills";
 import Bianca from "../images/Bianca.jpeg";
 
 import "../style/homepage.css";
+import { Experience } from "../components/Experience";
+
 
 export const Homepage = () => {
   const [isActive, setIsActive] = useState(false);
@@ -24,7 +27,7 @@ export const Homepage = () => {
   return (
     <div className="main-container max-w-full rounded-lg m-0 justify-center">
 
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 my-64">
       <div className="flex flex-col justify-center py-10">
         <h1 className="mb-6 text-6xl text-gray-900 dark:text-white">
           Bianca Francini
@@ -41,7 +44,7 @@ export const Homepage = () => {
         >
           <img
             src={Bianca}
-            className="Bianca-pic border rounded-full mb-10"
+            className="Bianca-pic border rounded-full mb-2"
             alt="Bianca pic profile"
           />
         </div>
@@ -94,14 +97,15 @@ export const Homepage = () => {
           </motion.div>
         )}
       </div>
-       {/* Left block */}
-       <div>
+     {/* <div className="mt-24 flex">
           {display && (
-            <div className="">
               <Outlet />
-            </div>
           )}
-        </div>
+          </div> */}
+          <TechSkills />
+          <Experience />
+          <Education />
+
     </div>
   );
 };
