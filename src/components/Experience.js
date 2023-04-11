@@ -99,9 +99,9 @@ export const Experience = () => {
                 <span className="absolute flex items-center text-2xl justify-center w-8 h-8 bg-white rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-gray-900">
                   {job.img}
                 </span>
-                <h3 className="flex md:flex-row flex-col md:items-center mb-1 md:text-2xl text-lg text-white font-semibold p-2 rounded-md bg-black w-full">
+                <h3 className="flex md:flex-row flex-col md:items-center mb-1 md:text-xl text-lg text-white font-semibold p-2 rounded-md bg-black w-full">
                   {job.role}
-                  <span className="md:text-2xl text-md font-thin md:pl-2 pt-1">
+                  <span className="md:text-xl text-md font-thin md:pl-2 md:pt-0">
                     {job.company ? `at ${job.company}` : ""}
                   </span>
                 </h3>
