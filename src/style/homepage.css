@@ -14,4 +14,13 @@
 .display-talk{
     width: 420px;
     min-height: 250px;
-  }
+}
+
+
+@media (max-width: 700px) {
+
+    .name-title-container{
+      margin: 0 auto;
+      align-items: center;
+    }
+}

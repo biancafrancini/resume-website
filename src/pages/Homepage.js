@@ -1,15 +1,17 @@
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 import { useState } from "react";
 import { Education } from "../components/Education";
 import { TechSkills } from "../components/TechSkills";
 import Bianca from "../images/Bianca.jpeg";
-
-import "../style/homepage.css";
+import me from "../images/me.png";
 import { Experience } from "../components/Experience";
-import { Projects } from "../components/Projects";
+//import { Projects } from "../components/Projects";
 import { Background } from "../components/Background";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
+
+
+import "../style/homepage.css";
 
 export const Homepage = () => {
   const [isActive, setIsActive] = useState(false);
@@ -27,13 +29,26 @@ export const Homepage = () => {
     <div className="main-container w-full rounded-lg m-0">
       <div className="booh relative">
          <Background />
-       <div className="flex justify-center z-10">
-        <div className="grid grid-cols-3 my-64 items-center">
-          <div className="flex flex-col justify-center py-10 z-10">
-            <h1 className="mb-6 text-6xl text-gray-900 dark:text-white">
+       <div className="flex justify-center z-10 sm:items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 my-64 mx-4 items-center">
+          {/* Icon */}
+          <div
+            className="box info-container max-w-xl z-10"
+            onClick={showOnClick}
+            // transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          >
+            {!isActive ? <img
+              src={Bianca}
+              className="Bianca-pic rounded-full mb-2"
+              alt="Bianca pic profile"
+            /> : <img src={me} className="Bianca-pic mb-2 rounded-full" alt="Bianca real profile"/>}
+          </div>
+
+          <div className="name-title-container flex flex-col justify-center py-10 z-10 md:pl-24">
+            <h1 className="mb-6 md:text-6xl text-5xl text-gray-900 dark:text-white">
               Bianca Francini
             </h1>
-            <h3 className="mb-8 text-gray-500 text-3xl dark:text-gray-400 z-10">
+            <h3 className="mb-8 text-gray-500 md:text-3xl text-2xl dark:text-gray-400 z-10">
               Front-end Developer
             </h3>
             <div className="contacts-icon text-5xl flex items-center">
@@ -42,21 +57,9 @@ export const Homepage = () => {
             <a href="mailto:francinibianca@gmail.com" className="text-6xl"><MdEmail /></a>
             </div>
           </div>
-          {/* Icon */}
-          <div
-            className="box info-container max-w-xl z-10"
-            onClick={showOnClick}
-            // transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          >
-            <img
-              src={Bianca}
-              className="Bianca-pic border rounded-full mb-2"
-              alt="Bianca pic profile"
-            />
-          </div>
 
           {/* Right block */}
-          {isActive && (
+          {/* {isActive && (
             <motion.div
               initial={{ x: -100 }}
               animate={{ x: 70 }}
@@ -79,13 +82,11 @@ export const Homepage = () => {
                   <a href="#education" className="py-2">
                     Education
                   </a>
-                  <a href="#projects" className="py-2">
-                    Projects
-                  </a>
+
                 </div>
               </div>
             </motion.div>
-          )}
+          )} */}
         </div>
         </div>
       </div>

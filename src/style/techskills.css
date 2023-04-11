@@ -57,3 +57,11 @@
 .nest-icon {
   color: rgb(217, 62, 62);
 }
+
+@media (max-width: 600px){
+
+  .icon-skills{
+    font-size: 60px;
+  }
+  
+}

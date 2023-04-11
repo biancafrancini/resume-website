@@ -41,7 +41,7 @@ export const Education = () => {
           x: { duration: 2},
         }}
       > </motion.div>*/}
-      <h2 className="font-bold text-5xl text-white pb-12">My education 📚 </h2>
+      <h2 className="font-bold md:text-5xl text-4xl text-white pb-24"> 📚 Education </h2>
       <ol className="job-list relative  border-gray-200 dark:border-gray-700 justify-center w-1/2">
         {certifications &&
           certifications.map((certification, index) => (
@@ -54,17 +54,17 @@ export const Education = () => {
                     "👩🏼‍🎓"
                   )}
                 </span>
-                <h3 className="flex items-center text-2xl text-white font-semibold pl-2 rounded-md bg-black w-full">
+                <h3 className="flex items-center md:text-2xl text-lg text-white font-semibold pl-2 rounded-md bg-black w-full">
                   {certification.title}
                 </h3>
                 </div>
-                <div className="text-2xl font-thin pl-2">
+                <div className="md:text-xl text-md font-thin pl-2">
                   {certification.institute
                     ? certification.institute
                     : certification.school}{" "}
                 </div>
 
-              <time className="block mb-2 text-md font-normal p-2 leading-none text-gray-400 text-gray-500">
+              <time className="block mb-2 md:text-md text-xs font-normal p-2 leading-none text-gray-400 text-gray-500">
                 {certification.date}
               </time>
             </li>

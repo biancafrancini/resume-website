@@ -26,7 +26,7 @@ export const TechSkills = () => {
         }}
       >*/}
 
-      <h2 className="font-bold text-5xl text-black py-12"> My skills 👩🏼‍💻</h2>
+      <h2 className="font-bold md:text-5xl text-4xl text-black py-12">👩🏼‍💻 Skills </h2>
 
         <div className="picture-side-container min-w-full flex justify-center icon-skills z-10">
           <div className="html-icon flex flex-col items-center">
