@@ -52,8 +52,8 @@ export const Homepage = () => {
               Front-end Developer
             </h3>
             <div className="contacts-icon text-5xl flex items-center">
-            <a href="https://www.linkedin.com/in/bianca-francini/"><BsLinkedin /></a>
-            <a href="https://github.com/biancafrancini" className="mx-8"><BsGithub /></a>
+            <a href="https://www.linkedin.com/in/bianca-francini/" target="_blank"><BsLinkedin /></a>
+            <a href="https://github.com/biancafrancini" className="mx-8" target="_blank"><BsGithub /></a>
             <a href="mailto:francinibianca@gmail.com" className="text-6xl"><MdEmail /></a>
             </div>
           </div>
