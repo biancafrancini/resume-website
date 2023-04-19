@@ -1,15 +1,14 @@
-//import { motion } from "framer-motion";
 import { useState } from "react";
 import { Education } from "../components/Education";
 import { TechSkills } from "../components/TechSkills";
-import Bianca from "../images/Bianca.jpeg";
-import me from "../images/me.png";
 import { Experience } from "../components/Experience";
-//import { Projects } from "../components/Projects";
+import { Projects } from "../components/Projects";
 import { Background } from "../components/Background";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
+import Bianca from "../images/Bianca.jpeg";
+import me from "../images/me.png";
 
 import "../style/homepage.css";
 
@@ -27,15 +26,13 @@ export const Homepage = () => {
 
   return (
     <div className="main-container w-full rounded-lg m-0">
-      <div className="booh relative">
+      <div className="relative">
          <Background />
        <div className="flex justify-center z-10 sm:items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 my-64 mx-4 items-center">
-          {/* Icon */}
           <div
             className="box info-container max-w-xl z-10"
             onClick={showOnClick}
-            // transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
             {!isActive ? <img
               src={Bianca}
@@ -52,47 +49,18 @@ export const Homepage = () => {
               Front-end Developer
             </h3>
             <div className="contacts-icon text-5xl flex items-center">
-            <a href="https://www.linkedin.com/in/bianca-francini/" target="_blank" rel="noreferrer"><BsLinkedin /></a>
-            <a href="https://github.com/biancafrancini" className="mx-8" target="_blank" rel="noreferrer"><BsGithub /></a>
-            <a href="mailto:francinibianca@gmail.com" className="text-6xl"><MdEmail /></a>
+            <a href="https://www.linkedin.com/in/bianca-francini/" target="_blank" rel="noreferrer" className="hover:text-green-600"><BsLinkedin /></a>
+            <a href="https://github.com/biancafrancini" className="mx-8 hover:text-green-600" target="_blank" rel="noreferrer"><BsGithub /></a>
+            <a href="mailto:francinibianca@gmail.com" className="text-6xl hover:text-green-600"><MdEmail /></a>
             </div>
           </div>
-
-          {/* Right block */}
-          {/* {isActive && (
-            <motion.div
-              initial={{ x: -100 }}
-              animate={{ x: 70 }}
-              transition={{
-                ease: "ease-in-out",
-                duration: 2,
-                x: { duration: 1 },
-              }}
-            >
-              <div className="display-talk text-2xl text-blue-600 bg-white p-8 border border-4 border-green-500 rounded-3xl">
-                <p>Hi there!</p>
-                <p>I'm Bianca. Nice to meet you 🙃</p>
-                <div className="mt-8 font-bold flex flex-col">
-                  <a href="#skills" className="py-2">
-                    Skills
-                  </a>
-                  <a href="#experience" className="py-2">
-                    Work experience
-                  </a>
-                  <a href="#education" className="py-2">
-                    Education
-                  </a>
-
-                </div>
-              </div>
-            </motion.div>
-          )} */}
         </div>
         </div>
       </div>
       <TechSkills />
-      <Education />
+      <Projects />
       <Experience />
+      <Education />
     </div>
   );
 };

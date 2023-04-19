@@ -14,7 +14,7 @@ export const Education = () => {
       date: "July-December 2021",
     },
     {
-      title: "Postgraduate Specialization in Cultural Heritage Management",
+      title: "Postgraduate Specialisation in Cultural Heritage Management",
       institute: "Link Campus University",
       date: "Sep. 2020",
     },
@@ -32,15 +32,6 @@ export const Education = () => {
 
   return (
     <div className="flex flex-col items-center py-24 bg-black" id="education">
-      {/*<motion.div
-        initial={{ x: 70 }}
-        animate={{ x: -100 }}
-        transition={{
-          ease: "ease-in-out",
-          duration: 2,
-          x: { duration: 2},
-        }}
-      > </motion.div>*/}
       <h2 className="font-bold md:text-5xl text-4xl text-white pb-24"> 📚 Education </h2>
       <ol className="job-list relative  border-gray-200 dark:border-gray-700 justify-center w-1/2">
         {certifications &&
@@ -54,11 +45,11 @@ export const Education = () => {
                     "👩🏼‍🎓"
                   )}
                 </span>
-                <h3 className="flex items-center md:text-2xl text-lg text-white font-semibold pl-2 rounded-md bg-black w-full">
+                <h3 className="flex items-center md:text-xl text-lg text-white font-semibold pl-2 rounded-md bg-black w-full">
                   {certification.title}
                 </h3>
                 </div>
-                <div className="md:text-xl text-md font-thin pl-2">
+                <div className="md:text-xl text-md font-light pl-2 pt-2">
                   {certification.institute
                     ? certification.institute
                     : certification.school}{" "}
@@ -71,47 +62,6 @@ export const Education = () => {
           ))}
       </ol>
 
-      {/* <div className="flex flex-wrap justify-center py-8">
-        {certifications &&
-          certifications.map((certificate, index) => (
-            <div key={index} className="indicator mx-4 w-64">
-              <span className="indicator-item bg-blue-200 border-1 border-blue-400 rounded-lg badge-lg pb-4">
-                <i className="fa-solid fa-scroll"></i>
-              </span>
-              <div className="content-text text-white border border-white rounded-md p-2">
-                <h3 className="font-bold text-white text-sm p-4">
-                  {certificate.title}
-                </h3>
-                <h5 className="text-xs text-white">{" "}
-                  {certificate.institute
-                    ? certificate.institute
-                    : certificate.school}{" "}
-                  on {certificate.date}
-                </h5>
-              </div>
-            </div>
-          ))}
-          </div>
-        <div className="flex flex-wrap justify-center">
-        {degrees &&
-          degrees.map((degree, index) => (
-            <div key={index} className="indicator mx-4 w-64">
-              <span className="indicator-item bg-blue-200 border-1 border-blue-400 rounded-lg badge-lg pb-4">
-                <i className="fa-solid fa-graduation-cap"></i>
-              </span>
-              <div className="content-text text-white border border-white rounded-md p-2">
-                <h3 className="font-bold text-white text-sm p-4">
-                  {degree.title}
-                </h3>
-                <h5 className="text-xs text-white">
-                  {degree.institute ? degree.institute : degree.school} on{" "}
-                  {degree.date}
-                </h5>
-              </div>
-            </div>
-          ))}
-      </div>
-     */}
     </div>
   );
 };

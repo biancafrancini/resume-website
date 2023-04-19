@@ -1,38 +1,50 @@
+import {Link} from "react-router-dom";
+import { BsGithub } from "react-icons/bs";
+import { TbWorldWww } from "react-icons/tb";
+import Flyer from "../images/Flyer.png";
+import Winnie from "../images/Winnie.png";
+
 import "../style/education.css";
 
 export const Projects = () => {
   const projectsList = [
-    { title: "Pokédex", img: "", link: "" },
-    { title: "Pokédex", img: "", link: "" },
-    { title: "Pokédex", img: "", link: "" },
+    {
+      title: "Landing page for instant messaging app",
+      img: Flyer,
+      link: "https://main--jovial-smakager-39e832.netlify.app",
+      repo: "https://github.com/biancafrancini/Landing-page-chat-app/tree/main/landing_page",
+    },
+    {
+      title: 'Easy login form ("Winnie the Pooh" style)',
+      img: Winnie,
+      link: "https://statuesque-starship-25d9f5.netlify.app",
+      repo: "https://github.com/biancafrancini/Easy-form/tree/main/form",
+    },
   ];
 
   return (
     <div
-      className="picture-side-container flex flex-col m-auto items-center mt-24 p-10 min-w-full mb-24"
-      id="education"
+      className="flex flex-col bg-black m-auto items-center py-24"
+      id="projects"
     >
-      {/*<motion.div
-        initial={{ x: 70 }}
-        animate={{ x: -100 }}
-        transition={{
-          ease: "ease-in-out",
-          duration: 2,
-          x: { duration: 2},
-        }}
-      > </motion.div>*/}
-      <h2 className="font-bold text-5xl text-white pb-24">Projects 💪🏻 </h2>
-      <div className="flex">
+      <h2 className="font-bold md:text-5xl text-4xl text-white pb-16"> 💪🏻 Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center min-h-72">
         {projectsList &&
           projectsList.map((project, index) => (
-            <div key={index} class="indicator m-4">
-              <div class="content-text text-white grid h-24 place-items-center p-2">
-                <a href={project.link}>
-                  <img src={project.img} alt="project screenshot" />
-                </a>
-                <h3 className="font-bold text-white text-sm p-4">
+            <div key={index} className="py-4 items-center mt-12">
+              <div className="content-text text-white flex flex-col justify-center min-h-72 items-center">
+                  <img
+                    src={project.img}
+                    alt="project screenshot"
+                    className="rounded-sm border-2 mx-20 my-2 md:w-72 w-64"
+                  />
+                <h3 className="font-thin md:text-xl text-lg w-fit text-white w-3/4 text-sm p-4">
                   {project.title}
                 </h3>
+                <div className="flex justify-center py-4 w-1/2 md:text-3xl text-2xl">
+                <Link to={project.repo} target="_blank" className="w-10 h-4 hover:text-green-600"><BsGithub /></Link>
+                <Link to={project.link} target="_blank" className="w-10 h-4 hover:text-green-600"><TbWorldWww /></Link>
+                </div>
               </div>
             </div>
           ))}

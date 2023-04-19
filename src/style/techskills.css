@@ -58,6 +58,14 @@
   color: rgb(217, 62, 62);
 }
 
+.mongo-icon {
+  color: #145f16;
+}
+
+.docker-icon{
+  color: #0db7ed;
+}
+
 @media (max-width: 600px){
 
   .icon-skills{

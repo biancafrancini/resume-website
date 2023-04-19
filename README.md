@@ -4,9 +4,11 @@ Personal website to showcase my experience and tech skills. 👩🏼‍💻
 
 Built using:
 
-- Javascript
 - React.js
 - React tsparticles
+- React-icons
+- Javascript
+- HTML
+- CSS
 - Tailwind CSS
-- Framer Motion
 
