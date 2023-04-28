@@ -1,6 +1,7 @@
-.techskills-section-container{
+.techskills-section-container {
   min-height: 300px;
 }
+
 .icon-skills {
   flex-wrap: wrap;
   font-size: 80px;
@@ -9,7 +10,7 @@
   gap: 30px 60px;
 }
 
-.brand{
+.brand {
   padding: 0 10px;
 }
 
@@ -33,7 +34,7 @@
   color: rgb(77, 198, 209);
 }
 
-.motion-icon, 
+.motion-icon,
 .git-icon {
   color: black;
 }
@@ -47,7 +48,7 @@
 }
 
 .react-icon {
-  color: #39C1D7;
+  color: #39c1d7;
 }
 
 .node-icon {
@@ -62,14 +63,12 @@
   color: #145f16;
 }
 
-.docker-icon{
+.docker-icon {
   color: #0db7ed;
 }
 
-@media (max-width: 600px){
-
-  .icon-skills{
+@media (max-width: 600px) {
+  .icon-skills {
     font-size: 60px;
   }
-  
 }

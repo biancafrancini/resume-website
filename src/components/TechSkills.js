@@ -1,4 +1,5 @@
 import { FaBootstrap, FaNodeJs, FaSass } from "react-icons/fa";
+import { BsGit } from "react-icons/bs";
 import {
   SiHtml5,
   SiMongodb,
@@ -11,7 +12,6 @@ import {
   SiNestjs,
   SiDocker,
 } from "react-icons/si";
-import { BsGit } from "react-icons/bs";
 
 import "../style/techskills.css";
 
@@ -21,16 +21,6 @@ export const TechSkills = () => {
       className="techskills-section-container flex flex-col items-center bg-white py-24"
       id="skills"
     >
-      {/*<motion.div
-        initial={{ x: 80 }}
-        animate={{ x: -80 }}
-        transition={{
-          ease: "ease-in-out",
-          duration: 2,
-          x: { duration: 2 },
-        }}
-      >*/}
-
       <h2 className="font-bold md:text-5xl text-4xl text-black py-12">
         👩🏼‍💻 Skills{" "}
       </h2>

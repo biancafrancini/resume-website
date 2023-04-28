@@ -1,19 +1,17 @@
-
-.indicator-item > .fa-graduation-cap{
-    color: #ff5778;
+.indicator-item > .fa-graduation-cap {
+  color: #ff5778;
 }
 
-.indicator-item > .fa-scroll{
-    color: #258b09;
+.indicator-item > .fa-scroll {
+  color: #258b09;
 }
 
-.content-text{
-    width: fit-content;
-    text-align: center;
-    color: blue;
+.content-text {
+  width: fit-content;
+  text-align: center;
+  color: blue;
 }
 
-.content-text > h4{
-    color: rgb(84, 84, 255);
+.content-text > h4 {
+  color: rgb(84, 84, 255);
 }
-

@@ -1,7 +1,4 @@
-//import { motion } from "framer-motion";
 import { FaMapMarkedAlt } from "react-icons/fa";
-
-import "../style/experience.css";
 
 export const Experience = () => {
   const jobs = [
@@ -74,16 +71,6 @@ export const Experience = () => {
       className="job-list-container max-w-full py-24 flex flex-col items-center bg-white"
       id="experience"
     >
-      {/*<motion.div
-        initial={{ x: 70 }}
-        animate={{ x: -100 }}
-        transition={{
-          ease: "ease-in-out",
-          duration: 2,
-          x: { duration: 2},
-        }}
-      > </motion.div>*/}
-
       <div className="flex md:flex-row flex-col items-center">
         <span className="font-bold md:text-5xl text-4xl md:pb-24 pb-2">👷🏼‍♀️</span>
         <h2 className="font-bold md:text-5xl text-4xl text-black pb-24">
