@@ -11,6 +11,7 @@ import {
   SiReact,
   SiNestjs,
   SiDocker,
+  SiFigma,
 } from "react-icons/si";
 
 import "../style/techskills.css";
@@ -47,9 +48,9 @@ export const TechSkills = () => {
           <SiTailwindcss className="brand" />
           <p className="font-bold text-sm py-2">Tailwind css</p>
         </div>
-        <div className="motion-icon flex flex-col items-center">
-          <SiFramer className="brand" />
-          <p className="font-bold text-sm py-2">Framer motion</p>
+        <div className="git-icon flex flex-col items-center">
+          <BsGit className="brand" />
+          <p className="font-bold text-sm py-2">Git</p>
         </div>
 
         <div className="js-icon flex flex-col items-center">
@@ -65,10 +66,15 @@ export const TechSkills = () => {
           <p className="font-bold text-sm py-2">React.js</p>
         </div>
 
-        <div className="git-icon flex flex-col items-center">
-          <BsGit className="brand" />
-          <p className="font-bold text-sm py-2">Git</p>
+        <div className="motion-icon flex flex-col items-center">
+          <SiFramer className="brand" />
+          <p className="font-bold text-sm py-2">Framer motion</p>
         </div>
+        <div className="figma-icon flex flex-col items-center">
+          <SiFigma className="brand" />
+          <p className="font-bold text-sm py-2">Figma</p>
+        </div>
+        
         <div className="node-icon flex flex-col items-center">
           <FaNodeJs className="brand" />
           <p className="font-bold text-sm py-2">Node.js</p>

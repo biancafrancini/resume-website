@@ -3,6 +3,8 @@ import { BsGithub } from "react-icons/bs";
 import { TbWorldWww } from "react-icons/tb";
 import Flyer from "../images/Flyer.png";
 import Winnie from "../images/Winnie.png";
+import pokedex from "../video/pokemon_app.mov";
+import aiArtGallery from "../video/AI_Art_Gallery_demo.mov";
 
 import "../style/education.css";
 
@@ -20,6 +22,18 @@ export const Projects = () => {
       link: "https://statuesque-starship-25d9f5.netlify.app",
       repo: "https://github.com/biancafrancini/Easy-form/tree/main/form",
     },
+    {
+      title: 'Pokédéx (Pokémons App)',
+      video: pokedex,
+      link: "",
+      repo: "https://github.com/biancafrancini/Pokedex-project",
+    },
+    {
+      title: 'FaikeArt (AI ART Gallery)',
+      video: aiArtGallery,
+      link: "",
+      repo: "https://github.com/biancafrancini/Art_Gallery",
+    }
   ];
 
   return (
@@ -36,11 +50,13 @@ export const Projects = () => {
           projectsList.map((project, index) => (
             <div key={index} className="py-4 items-center mt-12">
               <div className="content-text text-white flex flex-col justify-center min-h-72 items-center">
-                <img
+                {project.img ? <img
                   src={project.img}
                   alt="project screenshot"
                   className="rounded-sm border-2 mx-20 my-2 md:w-72 w-64"
-                />
+                /> : <video controls autoplay className="rounded-sm border-2 mx-20 my-2 md:w-72 w-64 md:h-52 h-48">
+                <source src={project.video} type="video/mp4"/>
+                </video> }
                 <h3 className="font-thin md:text-xl text-lg w-fit text-white w-3/4 text-sm p-4">
                   {project.title}
                 </h3>
@@ -52,13 +68,13 @@ export const Projects = () => {
                   >
                     <BsGithub />
                   </Link>
-                  <Link
+                  {project.link ? <Link
                     to={project.link}
                     target="_blank"
                     className="w-10 h-4 hover:text-green-600"
                   >
                     <TbWorldWww />
-                  </Link>
+                  </Link> : null}
                 </div>
               </div>
             </div>
