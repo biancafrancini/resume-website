@@ -34,10 +34,6 @@ export const Projects = () => {
       link: "",
       repo: "https://github.com/biancafrancini/Art_Gallery",
     },
-    {/*
-      title: "Art Galleries Finder app (Figma prototype)",
-      figma: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fre6yqCyFL9hYz5tL5LH1cI%2FHomepage%3Ftype%3Ddesign%26node-id%3D1-2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2",
-    },*/}
   ];
 
   return (
@@ -102,19 +98,19 @@ export const Projects = () => {
             </div>
           ))}
     </div>
-    <div className="figma-projects grid grid-cols-1 mt-6 mb-24 place-items-center">
+    <div className="figma-projects grid grid-cols-1 w-1/2 md:mt-32 mt-24 mb-24 place-items-center">
       <div className="mb-12 text-center text-white">
-          <h3 className="font-bold md:text-3xl text-2xl pb-2"> Figma Projects</h3>
-          <p className="md:text-lg text-md py-10">See some of my Figma projects in the high-fidelity prototype of my portfolio</p>
+          <h3 className="font-bold md:text-3xl text-2xl md:pb-2 pb-4"> Figma Projects</h3>
+          <p className="md:text-xl font-thin text-md md:py-10 py-8">See some of my Figma projects in the high-fidelity prototype of my portfolio</p>
       </div>
       <div className="figma-frame">
          <iframe
           className="prototype border border-2 rounded-sm"
           title="prototype portfolio"
-          width= "500"
-          height= "450"
+          width= "350"
+          height= "350"
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEco6VWv7c2kpn96oKuWQdk%2FPortfolio-Desktop%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DqKE6inzKlvA8iTVM-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign"
-          allowfullscreen></iframe>
+          allowFullScreen></iframe>
         </div>
       </div>
     </div>
