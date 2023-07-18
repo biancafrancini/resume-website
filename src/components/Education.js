@@ -3,6 +3,11 @@ import "../style/education.css";
 export const Education = () => {
   const certifications = [
     {
+      title: "Google UX Design Professional Certificate",
+      school: "Google",
+      date: "July 2023",
+    },
+    {
       title: "Full Stack Developer Certificate",
       school: "Develhope",
       date: "March 2023",

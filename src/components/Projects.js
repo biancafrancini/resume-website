@@ -102,20 +102,19 @@ export const Projects = () => {
             </div>
           ))}
     </div>
-    <div className="figma-projects grid grid-cols-1 md:grid-cols-2 md:gap-24 place-items-center md:mt-2">
-      <div className="md:ml-8 md:mb-64 mb-12 text-center text-white">
-          <h3 className="font-bold md:text-3xl text-2xl md:pb-4 pb-2">Art Galleries Finder app</h3>
-          <h4 className="md:text-lg text-md pb-4">Low-fidelity Prototype built with Figma</h4>
+    <div className="figma-projects grid grid-cols-1 mt-6 mb-24 place-items-center">
+      <div className="mb-12 text-center text-white">
+          <h3 className="font-bold md:text-3xl text-2xl pb-2"> Figma Projects</h3>
+          <p className="md:text-lg text-md py-10">See some of my Figma projects in the high-fidelity prototype of my portfolio</p>
       </div>
-      <div className="">
+      <div className="figma-frame">
          <iframe
           className="prototype border border-2 rounded-sm"
-          title="prototype app"
-          width= "250"
-          height= "550"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fre6yqCyFL9hYz5tL5LH1cI%2FHomepage%3Ftype%3Ddesign%26node-id%3D1-2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2"
-          allowfullscreen
-        ></iframe>
+          title="prototype portfolio"
+          width= "500"
+          height= "450"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEco6VWv7c2kpn96oKuWQdk%2FPortfolio-Desktop%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DqKE6inzKlvA8iTVM-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign"
+          allowfullscreen></iframe>
         </div>
       </div>
     </div>
