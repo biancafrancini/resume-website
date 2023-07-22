@@ -52,7 +52,7 @@ export const Homepage = () => {
                 Bianca Francini
               </h1>
               <h3 className="mb-8 text-gray-500 md:text-3xl text-2xl dark:text-gray-400 z-10">
-                Front-end Developer
+                Full stack Developer
               </h3>
               <div className="contacts-icon text-5xl flex items-center">
                 <a
