@@ -3,7 +3,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 export const Experience = () => {
   const jobs = [
     {
-      role: "Front-end Developer - Contractor",
+      role: "Front End Developer - Contractor",
       city: "Remote",
       responsability:
         "Designing and building websites from scratch following specific requests.",
