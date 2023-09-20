@@ -31,7 +31,7 @@ export const Projects = () => {
     {
       title: "FaikeArt (AI ART Gallery)",
       video: aiArtGallery,
-      link: "",
+      link: "https://charming-boba-715a9d.netlify.app",
       repo: "https://github.com/biancafrancini/Art_Gallery",
     },
   ];
