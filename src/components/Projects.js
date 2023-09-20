@@ -17,7 +17,7 @@ export const Projects = () => {
       repo: "https://github.com/biancafrancini/Landing-page-chat-app/tree/main/landing_page",
     },
     {
-      title: 'Easy login form ("Winnie the Pooh" style)',
+      title: 'Login page ("Winnie the Pooh" style)',
       img: Winnie,
       link: "https://statuesque-starship-25d9f5.netlify.app",
       repo: "https://github.com/biancafrancini/Easy-form/tree/main/form",
