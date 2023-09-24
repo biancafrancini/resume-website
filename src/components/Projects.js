@@ -60,7 +60,7 @@ export const Projects = () => {
                   project.video && (
                     <video
                       controls
-                      autoplay
+                      autoPlay
                       className="rounded-sm border-2 mx-20 my-2 md:w-72 w-64 md:h-52 h-48"
                     >
                       <source src={project.video} type="video/mp4" />
