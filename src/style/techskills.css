@@ -60,13 +60,23 @@
   color: rgb(217, 62, 62);
 }
 
+.python-icon {
+  color: #646464;
+} 
+
 .mongo-icon {
   color: #145f16;
+}
+
+.postgres-icon{
+  color: #1f1f1f;
 }
 
 .docker-icon {
   color: #0db7ed;
 }
+
+
 
 @media (max-width: 600px) {
   .icon-skills {

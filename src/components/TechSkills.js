@@ -12,6 +12,8 @@ import {
   SiNestjs,
   SiDocker,
   SiFigma,
+  SiPython,
+  SiPostgresql,
 } from "react-icons/si";
 
 import "../style/techskills.css";
@@ -83,10 +85,20 @@ export const TechSkills = () => {
           <SiNestjs className="brand" />
           <p className="font-bold text-sm py-2">Nest.js</p>
         </div>
+        <div className="python-icon flex flex-col items-center">
+          <SiPython className="brand" />
+          <p className="font-bold text-sm py-2">Python</p>
+        </div>
+
         <div className="mongo-icon flex flex-col items-center">
           <SiMongodb className="brand" />
           <p className="font-bold text-sm py-2">MongoDB</p>
         </div>
+        <div className="postgres-icon flex flex-col items-center">
+          <SiPostgresql className="brand" />
+          <p className="font-bold text-sm py-2">PostgreSQL</p>
+        </div>
+        
         <div className="docker-icon flex flex-col items-center">
           <SiDocker className="brand" />
           <p className="font-bold text-sm py-2">Docker</p>
