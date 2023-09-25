@@ -13,7 +13,7 @@ export const TechSkills = () => {
 
       <div className="picture-side-container min-w-full flex justify-center icon-skills z-10">
       {icons.map((icon) =>
-          <div key={icon.name} className={`${icon.name}-icon flex flex-col items-center md:px-4 px-2 py-6`}>
+          <div key={icon.name} className={`${icon.name}-icon flex flex-col items-center md:px-4 py-6`}>
           {icon.iconName}
           <p className="font-bold text-sm py-2">{icon.name}</p>
         </div>)}

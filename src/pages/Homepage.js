@@ -23,7 +23,7 @@ export const Homepage = () => {
   };
 
   return (
-    <div className="main-container w-full rounded-lg m-0">
+    <div className="main-container w-full rounded-lg">
       <div className="relative">
         <Background />
         <div className="flex justify-center z-10 sm:items-center">

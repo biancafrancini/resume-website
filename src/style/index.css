@@ -7,7 +7,7 @@ body {
   min-width: 100vw;
   margin: 0;
   position: absolute;
-  background-color: rgb(6, 6, 80);
+  background-color: #000;
   align-items: center;
   justify-content: center;
 }
