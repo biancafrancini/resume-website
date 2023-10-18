@@ -1,7 +1,14 @@
 import "../style/education.css";
+import BadgeAWS from "../images/badgeAws.png";
 
 export const Education = () => {
   const certifications = [
+    {
+      title: "AWS re/Start Training Program",
+      school: "AWS",
+      badge: BadgeAWS,
+      date: "Oct. 2023",
+    },
     {
       title: "Google UX Design Professional Certificate",
       school: "Google",
@@ -52,10 +59,24 @@ export const Education = () => {
                   {certification.title}
                 </h3>
               </div>
-              <div className="md:text-xl text-md font-light pl-2 pt-2">
+              <div className="md:text-xl text-md font-light pl-2 pt-2 flex items-center">
                 {certification.institute
                   ? certification.institute
                   : certification.school}{" "}
+                {certification.badge && (
+                  <a
+                    href="https://www.credly.com/badges/9bec5084-1f93-420a-9f52-e3c9c12ed9e7/linked_in_profile"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    {" "}
+                    <img
+                      src={certification.badge}
+                      alt="badge"
+                      className="w-8 h-8 pl-2"
+                    />{" "}
+                  </a>
+                )}
               </div>
 
               <time className="block mb-2 md:text-md text-xs font-normal p-2 leading-none text-gray-400 text-gray-500">
