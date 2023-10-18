@@ -58,13 +58,13 @@
 
 .python-icon {
   color: #646464;
-} 
+}
 
 .mongo-icon {
   color: #145f16;
 }
 
-.postgres-icon{
+.postgres-icon {
   color: #1f1f1f;
 }
 
@@ -72,7 +72,9 @@
   color: #0db7ed;
 }
 
-
+.aws-icon {
+  color: #1e3050;
+}
 
 @media (max-width: 600px) {
   .icon-skills {
