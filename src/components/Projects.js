@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import { TbWorldWww } from "react-icons/tb";
+import { SiFigma } from "react-icons/si";
 import Flyer from "../images/Flyer.png";
 import Winnie from "../images/Winnie.png";
 import pokedex from "../video/pokemon_app.mov";
 import aiArtGallery from "../video/AI_Art_Gallery_demo.mov";
+import Figma from "../images/figma_cover.png";
 
 import "../style/education.css";
+
 
 export const Projects = () => {
   const projectsList = [
@@ -104,13 +107,24 @@ export const Projects = () => {
           <p className="md:text-xl font-thin text-md md:py-10 py-8">See some of my Figma projects in the high-fidelity prototype of my portfolio</p>
       </div>
       <div className="figma-frame">
-         <iframe
-          className="prototype border border-2 rounded-sm"
-          title="prototype portfolio"
-          width= "350"
-          height= "350"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEco6VWv7c2kpn96oKuWQdk%2FPortfolio-Desktop%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DqKE6inzKlvA8iTVM-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign"
-          allowFullScreen></iframe>
+         <div
+          className="prototype border border-2 rounded-sm w-72 h-48 pb-2"
+          >
+            <img 
+            alt="figma prototype screenshot"
+            src={Figma}
+            className="figma-project-img"
+            />
+          </div>
+          <div className="flex justify-center py-6 md:text-3xl text-2xl">
+          <Link
+            to="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEco6VWv7c2kpn96oKuWQdk%2FPortfolio-Desktop%3Ftype%3Ddesign%26node-id%3D1-2%26t%3DqKE6inzKlvA8iTVM-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign"
+            target="_blank"
+            className="w-10 h-4 hover:text-green-600"
+            >
+              <SiFigma />
+            </Link>
+            </div>
         </div>
       </div>
     </div>

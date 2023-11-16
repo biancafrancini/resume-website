@@ -51,7 +51,7 @@ export const Homepage = () => {
               <h1 className="mb-6 md:text-6xl text-5xl text-gray-900 dark:text-white">
                 Bianca Francini
               </h1>
-              <h3 className="mb-8 text-gray-500 md:text-3xl text-2xl dark:text-gray-400 z-10">
+              <h3 className="mb-8 text-gray-500 md:text-3xl sm:text-left text-2xl text-center dark:text-gray-400 z-10">
                 Full Stack Developer | AWS Cloud Practitioner
               </h3>
               <div className="contacts-icon text-5xl flex items-center">
