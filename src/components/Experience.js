@@ -16,7 +16,7 @@ export const Experience = () => {
       city: "Remote",
       responsability:
         "Designing and building websites from scratch following specific requests.",
-      date: "June - Dec. 2021 & Mar. 2023 - present",
+      date: "June - Dec. 2021 & Mar. 2023 - Dec. 2023",
       img: "👩🏼‍💻",
     },
     {
