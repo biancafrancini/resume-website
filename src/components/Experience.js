@@ -8,7 +8,7 @@ export const Experience = () => {
       city: "Remote",
       responsability:
         "Working alongside with Senior Developers and Designers to develop digital solutions for healthcare professionals as HCPs Communities platforms.",
-      date: "June - Dec. 2021 & Mar. 2023 - present",
+      date: "Jan. 2024 - present",
       img: "👩🏼‍💻",
     },
     {
