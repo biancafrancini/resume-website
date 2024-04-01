@@ -76,6 +76,10 @@
   color: #1e3050;
 }
 
+.bubble-icon {
+  color: #1e3050;
+}
+
 @media (max-width: 600px) {
   .icon-skills {
     font-size: 60px;

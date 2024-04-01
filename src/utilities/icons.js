@@ -15,6 +15,7 @@ import {
   SiPython,
   SiPostgresql,
 } from "react-icons/si";
+//import { BubbleIcon } from "./bubbleIcon.js";
 
 export const icons = [
   {

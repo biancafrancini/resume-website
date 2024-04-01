@@ -7,7 +7,7 @@ export const Experience = () => {
       company: "IPS",
       city: "Remote",
       responsability:
-        "Working alongside with Senior Developers and Designers to develop digital solutions for healthcare professionals as HCPs Communities platforms.",
+        "Working alongside senior developers and designers to develop digital solutions for healthcare professionals as HCPs Communities platforms.",
       date: "Jan. 2024 - present",
       img: "👩🏼‍💻",
     },
