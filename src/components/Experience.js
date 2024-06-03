@@ -7,7 +7,7 @@ export const Experience = () => {
       company: "IPS",
       city: "Remote",
       responsability:
-        "Working alongside senior developers and designers to develop digital solutions for healthcare professionals as HCPs Communities platforms.",
+        "Working alongside senior developers and designers to develop digital solutions for healthcare professionals.",
       date: "Jan. 2024 - present",
       img: "👩🏼‍💻",
     },
@@ -24,7 +24,7 @@ export const Experience = () => {
       company: "K PAK Ltd",
       city: "Mitcham, UK",
       responsability:
-        "Office operations and managed shipping of artworks. Collaborated with cross-functional teams to ensure timely and accurate delivery of services.",
+      "Assisted with office operations and managed shipping of artworks. Collaborated with cross-functional teams to ensure timely and accurate delivery of services.",
       date: "Nov. 2021 - July 2022",
       img: "🚛",
     },
@@ -33,7 +33,7 @@ export const Experience = () => {
       company: "Art Gazette",
       city: "London, UK",
       responsability:
-        "Cataloged and digitized contemporary artworks, increasing accessibility and organization. Assisted with the relocation of valuable pieces, ensuring proper handling and preservation.",
+        "Cataloged and digitalised contemporary artworks, increasing accessibility and organization. Assisted with the relocation of valuable pieces, ensuring proper handling and preservation.",
       date: "Sep. 2021",
       img: "🖼️",
     },
@@ -51,7 +51,7 @@ export const Experience = () => {
       company: "Associazione Culture Attive",
       city: "Remote",
       responsability:
-        "Managed social media profiles and cultural events and created informative sheets about environmental art.",
+        "Managed social media profiles and cultural events. Created informative content about environmental art and implemented it on a WordPress site.",
       date: "Feb. 2017 - Dec. 2021",
       img: "👩🏼‍💻",
     },
@@ -60,7 +60,7 @@ export const Experience = () => {
       company: "Fercam Fine Art",
       city: "Rome, Italy",
       responsability:
-        "Coordinated fine art shipping and exhibitions. Managed relationships with museum and gallery clients.",
+          "Coordinated fine art shipments for both local and international Museums exhibitions, and private galleries.",
       date: "Oct. 2019 - Sep. 2020",
       img: "🚛",
     },
