@@ -47,8 +47,8 @@ export const Homepage = () => {
               )}
             </div>
 
-            <div className="name-title-container flex flex-col justify-center py-10 z-10 md:pl-24">
-              <h1 className="mb-6 md:text-6xl text-5xl text-gray-900 dark:text-white">
+            <div className="name-title-container flex flex-col justify-center py-10 z-10 md:pl-24 text-white">
+              <h1 className="mb-6 md:text-6xl text-5xl text-white dark:text-white">
                 Bianca Francini
               </h1>
               <h3 className="mb-8 text-gray-500 md:text-3xl sm:text-left text-2xl text-center dark:text-gray-400 z-10">
