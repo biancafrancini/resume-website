@@ -7,12 +7,25 @@ import Winnie from "../images/Winnie.png";
 import pokedex from "../video/pokemon_app.mov";
 import aiArtGallery from "../video/AI_Art_Gallery_demo.mov";
 import Figma from "../images/figma_cover.png";
+import Sergio from "../video/Sergio.mov";
 
 import "../style/education.css";
 
 
 export const Projects = () => {
   const projectsList = [
+    {
+      title: "Sergio (Italian artist's website)",
+      video: Sergio,
+      link: "https://incomparable-fenglisu-d97e8b.netlify.app",
+      repo: "https://github.com/biancafrancini/berre-artworks",
+    },
+    {
+      title: "FaikeArt (AI ART Gallery)",
+      video: aiArtGallery,
+      link: "https://charming-boba-715a9d.netlify.app",
+      repo: "https://github.com/biancafrancini/Art_Gallery",
+    },
     {
       title: "Landing page for instant messaging app",
       img: Flyer,
@@ -30,12 +43,6 @@ export const Projects = () => {
       video: pokedex,
       link: "",
       repo: "https://github.com/biancafrancini/Pokedex-project",
-    },
-    {
-      title: "FaikeArt (AI ART Gallery)",
-      video: aiArtGallery,
-      link: "https://charming-boba-715a9d.netlify.app",
-      repo: "https://github.com/biancafrancini/Art_Gallery",
     },
   ];
 
@@ -57,14 +64,14 @@ export const Projects = () => {
                   <img
                     src={project.img}
                     alt="project screenshot"
-                    className="rounded-sm border-2 mx-20 my-2 md:w-72 w-64"
+                    className="rounded-sm border-2 mx-20 my-2 md:w-72 w-64 h-48"
                   />
                 ) : (
                   project.video && (
                     <video
                       controls
                       autoPlay
-                      className="rounded-sm border-2 mx-20 my-2 md:w-72 w-64 md:h-52 h-48"
+                      className="rounded-sm border-2 mx-20 my-2 md:w-72 w-64 h-48"
                     >
                       <source src={project.video} type="video/mp4" />
                     </video>
@@ -104,7 +111,7 @@ export const Projects = () => {
     <div className="figma-projects grid grid-cols-1 w-1/2 md:mt-32 mt-24 mb-24 place-items-center">
       <div className="mb-12 text-center text-white">
           <h3 className="font-bold md:text-3xl text-2xl md:pb-2 pb-4"> Figma Projects</h3>
-          <p className="md:text-xl font-thin text-md md:py-10 py-8">See some of my Figma projects in the high-fidelity prototype of my portfolio</p>
+          {/* <p className="md:text-xl font-thin text-md md:py-10 py-8">See some of my projects in Figma</p> */}
       </div>
       <div className="figma-frame">
          <div

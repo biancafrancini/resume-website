@@ -7,7 +7,7 @@ export const Experience = () => {
       company: "IPS",
       city: "Remote",
       responsability:
-        "Working alongside senior developers and designers to develop digital solutions for healthcare professionals.",
+        "End-to-end development of novel platforms for healthcare professionals: design and test user journeys and stories; create wireframes and high fidelity prototypes with Figma and contents with Adobe Illustrator; build the product with Javascript, Bubble, Webflow and Python (for data visualisation)",
       date: "Jan. 2024 - present",
       img: "👩🏼‍💻",
     },
@@ -15,7 +15,7 @@ export const Experience = () => {
       role: "Front End Developer - Contractor",
       city: "Remote",
       responsability:
-        "Designing and building websites from scratch following specific requests.",
+        "Designed and developed websites and applications for various clients",
       date: "June - Dec. 2021 & Mar. 2023 - Dec. 2023",
       img: "👩🏼‍💻",
     },
@@ -24,7 +24,7 @@ export const Experience = () => {
       company: "K PAK Ltd",
       city: "Mitcham, UK",
       responsability:
-      "Assisted with office operations and managed shipping of artworks. Collaborated with cross-functional teams to ensure timely and accurate delivery of services.",
+      "Updated storage database to handle artworks data and improved warehouse tracking speed; supervised warehouse and technical teams operations and produced import/export documentations; worked with internal and external stakeholders, including Phillips, Sassoon, FedEx, DHL",
       date: "Nov. 2021 - July 2022",
       img: "🚛",
     },
@@ -51,7 +51,7 @@ export const Experience = () => {
       company: "Associazione Culture Attive",
       city: "Remote",
       responsability:
-        "Managed social media profiles and cultural events. Created informative content about environmental art and implemented it on a WordPress site.",
+        "Updated the environmental art section of the official Valdelsa Valdicecina website with WordPress; managed association’s social media profiles and organised cultural events",
       date: "Feb. 2017 - Dec. 2021",
       img: "👩🏼‍💻",
     },
@@ -60,7 +60,7 @@ export const Experience = () => {
       company: "Fercam Fine Art",
       city: "Rome, Italy",
       responsability:
-          "Coordinated fine art shipments for both local and international Museums exhibitions, and private galleries.",
+          "Liaised with international clients, agents, auction houses, museums, private and public art galleries; planned and organised the entire process of both domestic and international art shipments while coordinating technical teams during the installation/deinstallation of artworks during exhibitions; oversaw operations and condition reports in two notable exhibitions in Rome and Urbino",
       date: "Oct. 2019 - Sep. 2020",
       img: "🚛",
     },
