@@ -7,7 +7,7 @@ import Winnie from "../images/Winnie.png";
 import pokedex from "../video/pokemon_app.mov";
 import aiArtGallery from "../video/AI_Art_Gallery_demo.mov";
 import Figma from "../images/figma_cover.png";
-import Sergio from "../video/Sergio.mov";
+import Sergio from "../images/Sergio-cover.png";
 
 import "../style/education.css";
 
@@ -16,7 +16,7 @@ export const Projects = () => {
   const projectsList = [
     {
       title: "Sergio (Italian artist's website)",
-      video: Sergio,
+      img: Sergio,
       link: "https://incomparable-fenglisu-d97e8b.netlify.app",
       repo: "https://github.com/biancafrancini/berre-artworks",
     },
